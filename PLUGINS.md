@@ -8,6 +8,7 @@ This document lists all available Claude Code plugins and their commands in the 
 - [Ci](#ci-plugin)
 - [Code Review](#code-review-plugin)
 - [Compliance](#compliance-plugin)
+- [Confluence](#confluence-plugin)
 - [Container Image](#container-image-plugin)
 - [Doc](#doc-plugin)
 - [Etcd](#etcd-plugin)
@@ -113,6 +114,17 @@ Security compliance and vulnerability analysis tools for Go projects
 - **`/compliance:analyze-cve` `<CVE-ID> [--algo=vta|rta|cha|static]`** - Analyze Go codebase for CVE vulnerabilities and suggest fixes
 
 See [plugins/compliance/README.md](plugins/compliance/README.md) for detailed documentation.
+
+### Confluence Plugin
+
+Confluence page management, documentation generation from Jira, and meeting notes publishing
+
+**Commands:**
+- **`/confluence:create-from-jira` `<issue-key> [--space <key>] [--parent-id <id>] [--type design-doc|feature-spec|runbook]`** - Generate a structured Confluence page from a Jira epic or story
+- **`/confluence:search` `<query> [--space <key>] [--limit <n>]`** - Search Confluence for related documentation using natural language or CQL
+- **`/confluence:sync-meeting-notes` `<space-key> <title> [--parent-id <id>] [--update <page-id>]`** - Publish meeting notes or agendas to Confluence with structured formatting
+
+See [plugins/confluence/README.md](plugins/confluence/README.md) for detailed documentation.
 
 ### Container Image Plugin
 

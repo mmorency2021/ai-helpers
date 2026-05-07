@@ -238,6 +238,12 @@
       "source": "./plugins/marketplace-ops",
       "description": "Maintenance commands for Claude Code plugin marketplaces",
       "version": "0.1.2"
+    },
+    {
+      "name": "confluence",
+      "source": "./plugins/confluence",
+      "description": "Confluence page management, documentation generation from Jira, and meeting notes publishing",
+      "version": "0.1.0"
     }
   ]
 }
