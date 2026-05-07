@@ -1790,6 +1790,45 @@
       "name": "marketplace-ops",
       "skills": [],
       "version": "0.1.2"
+    },
+    {
+      "commands": [
+        {
+          "argument_hint": "<issue-key> [--space <key>] [--parent-id <id>] [--type design-doc|feature-spec|runbook]",
+          "description": "Generate a structured Confluence page from a Jira epic or story",
+          "name": "create-from-jira",
+          "synopsis": "/confluence:create-from-jira <issue-key> [--space <key>] [--parent-id <id>] [--type design-doc|feature-spec|runbook]"
+        },
+        {
+          "argument_hint": "<query> [--space <key>] [--limit <n>]",
+          "description": "Search Confluence for related documentation using natural language or CQL",
+          "name": "search",
+          "synopsis": "/confluence:search <query> [--space <key>] [--limit <n>]"
+        },
+        {
+          "argument_hint": "<space-key> <title> [--parent-id <id>] [--update <page-id>]",
+          "description": "Publish meeting notes or agendas to Confluence with structured formatting",
+          "name": "sync-meeting-notes",
+          "synopsis": "/confluence:sync-meeting-notes <space-key> <title> [--parent-id <id>] [--update <page-id>]"
+        }
+      ],
+      "description": "Confluence page management, documentation generation from Jira, and meeting notes publishing",
+      "has_readme": true,
+      "hooks": [],
+      "name": "confluence",
+      "skills": [
+        {
+          "description": "Best practices for Confluence space organization, page hierarchy, labeling, and content formatting",
+          "id": "confluence-conventions",
+          "name": "Confluence Conventions"
+        },
+        {
+          "description": "Structured templates for common Confluence page types including design docs, feature specs, meeting notes, runbooks, and decision records",
+          "id": "page-templates",
+          "name": "Page Templates"
+        }
+      ],
+      "version": "0.1.0"
     }
   ]
 }
